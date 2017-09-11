@@ -4,14 +4,9 @@
 	"version":"2.0.0",
 	"tasks": [
 		{
-			"taskName":"Build release_windows VictAsteroids",
+			"taskName":"Build debug_linux VictAsteroids",
 			"type":"shell",
-			"command":"mingw32-make config=release_windows VictAsteroids"
-		},
-		{
-			"taskName":"Build release_linux VictAsteroids",
-			"type":"shell",
-			"command":"make config=release_linux VictAsteroids"
+			"command":"make config=debug_linux VictAsteroids"
 		},
 		{
 			"taskName":"Build debug_windows VictAsteroids",
@@ -19,9 +14,14 @@
 			"command":"mingw32-make config=debug_windows VictAsteroids"
 		},
 		{
-			"taskName":"Build debug_linux VictAsteroids",
+			"taskName":"Build release_linux VictAsteroids",
 			"type":"shell",
-			"command":"make config=debug_linux VictAsteroids"
+			"command":"make config=release_linux VictAsteroids"
+		},
+		{
+			"taskName":"Build release_windows VictAsteroids",
+			"type":"shell",
+			"command":"mingw32-make config=release_windows VictAsteroids"
 		},
 		{
 			"taskName":"Clean",

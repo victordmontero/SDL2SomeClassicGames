@@ -8,6 +8,7 @@ local dlls = "libs/dlls"
 workspace("SDL2ClassicGames")
 	configurations({"Debug","Release"})
     platforms({"Linux","Windows"})
+    platforms({"Windows"})
 
     filter("platforms:Windows")
         postbuildcommands({
